@@ -1,26 +1,34 @@
 <html>
   <head>
+
     <title> EPICS-MALCOLM-DOUGHNUT-DEMO </title>
+
   </head>
   <body>
     <div id= "page-wrapper">
 
-       <h1> Talking to Malcolm </h1>
+      <h1> Talking to Malcolm </h1>
 
-    <div id= "status">Connecting</div>
-    <button id="buttonGet">Ask Malcolm</button>
+        <div id= "status"> </div>
+        <button id="buttonGet"> Ask Malcolm </button>
+        <div id="textUpdate"> Watch this space... </div>
+
     </div>
-    <div id="textUpdate"> Watch this space... </div>
+
     <script src="connection.js"> </script>
 
 
-    </body>
+  </body>
 </html>
 
 
 
-<!COMMENTS:
+<!--
 
+Page Wrapper: surrounds the three interactive elements below (currently not utilised).
 
+Status: Displays the connection status
+buttonGet: Fires a request to the server over the WebSocket Connection
+textUpdate: Displays the response from the server
 
->
+-->
